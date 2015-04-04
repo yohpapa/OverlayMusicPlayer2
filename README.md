@@ -5,12 +5,12 @@ This is the simple and minimalist music player but it's also definitely useful a
 
 # Usage
 
-Select a tab from genres, artists, albums, playlists, songs tab or swipe among them and then select a category in the selected tab. So songs which belong to your selected category will be started playing.
-After that, you will see the control panel on top of the screen. The control panel will disappear if you do not touch the screen for a few second. If you want to show the control panel again, just touch anywhere on the screen and you will see the white area on right side of the screen. Tap the area to show the control panel.
+Select a tab from GENRES, ARTISTS, ALBUMS, PLAYLISTS, SONGS tabs or swipe among these tabs and then select an item. You can play songs which belong to your selected item.
+And you will see the control panel on the top of the screen. The control panel will disappear if you do not touch the screen for a few second. If you want to show the control panel again, just touch anywhere on the screen and you will see the white area on the right side of the screen. Tap the white area to show the control panel.
 
-You can control the music player such as play, pause, track up, track down and stop on the control panel. In addition you can see the song list which belong to the selected category and you can also select one item and play it.
+You can control the music player such as play, pause, track up, track down and stop on the control panel. In addition you can see the current song list and you can also select another song from the list.
 
-If you want to change the background color of the control panel, go to the settings tab. You can change the background color. If you also want to change text color on the control panel to fit it to the background color, tap the title text area or artist text area so text to toggle the text color (black and white).
+If you want to change the background color of the control panel, go to the SETTINGS tab. You can change the background color. If you also want to change text color on the control panel to fit it to the background color, tap the title or artist text area to toggle the color (black and white).
 
 # License
 

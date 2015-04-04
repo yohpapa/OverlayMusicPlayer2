@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright 2014 Kensuke Nakai<kemumaki.kemuo@gmail.com>
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<resources>
+    <string name="app_name">Overlay Music Player</string>
+    <string name="desc_image_artwork" />
+    <string name="desc_image_play_state" />
+    
+    <string name="msg_no_song">No song to play&#8230;</string>
+    
+    <string name="tab_genres">GENRES</string>
+    <string name="tab_artists">ARTISTS</string>
+    <string name="tab_albums">ALBUMS</string>
+    <string name="tab_playlists">PLAYLISTS</string>
+    <string name="tab_songs">SONGS</string>
+    <string name="tab_settings">SETTINGS</string>
+    
+    <string name="pref_category_appearance">APPEARANCE</string>
+    <string name="pref_key_appearance">pref_key_appearance</string>
+    
+    <string name="pref_title_background_color">BACKGROUND COLOR</string>
+    <string name="pref_summary_background_color">Select background color for the overlay panel.</string>
+    <string name="pref_key_background_color">pref_key_background_color</string>
+    <string name="pref_background_color">pref_background_color</string>
+    <string name="pref_foreground_color">pref_foreground_color</string>
+    
+    <string name="pref_title_time_to_hide">TIME TO HIDE THE PANEL</string>
+    <string name="pref_key_time_to_hide">pref_key_time_to_hide</string>
+    <string name="pref_time_to_hide_keep">Keep</string>
+    <string name="pref_time_to_hide_minite">minute</string>
+    <string name="pref_time_to_hide_minites">minutes</string>
+    
+    <string name="pref_caategory_developer">DEVELOPER</string>
+    <string name="pref_key_developer">pref_key_developer</string>
+    
+    <string name="pref_title_licenses">OPEN SOURCE LICENSES</string>
+    <string name="pref_summary_licenses">About open source libraries which are used by this app.</string>
+    <string name="pref_key_licenses">pref_key_licenses</string>
+    
+    <string name="pref_title_version">VERSION</string>
+    <string name="pref_key_version">pref_key_version</string>
+    
+    <string name="pref_last_tab_position">pref_last_tab_position</string>
+</resources>

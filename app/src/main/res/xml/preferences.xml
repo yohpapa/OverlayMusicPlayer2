@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright 2014 Kensuke Nakai<kemumaki.kemuo@gmail.com>
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/pref_category_appearance"
+        android:key="@string/pref_key_appearance">
+        
+        <!-- Background color -->
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:title="@string/pref_title_background_color"
+            android:key="@string/pref_key_background_color"
+            android:summary="@string/pref_summary_background_color"
+            android:defaultValue="@color/overlay_panel_background"
+            alphaSlider="true" />
+        
+        <!-- Time to hide -->
+        <Preference
+            android:title="@string/pref_title_time_to_hide"
+            android:key="@string/pref_key_time_to_hide"
+            android:summary="@string/pref_time_to_hide_keep" />
+    
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:title="@string/pref_caategory_developer"
+        android:key="@string/pref_key_developer">
+        
+        <!-- Open source licenses -->
+        <Preference
+            android:title="@string/pref_title_licenses"
+            android:key="@string/pref_key_licenses"
+            android:summary="@string/pref_summary_licenses" />
+        
+        <!-- Version of the app -->
+        <Preference
+            android:title="@string/pref_title_version"
+            android:key="@string/pref_key_version" />
+        
+    </PreferenceCategory>
+    
+</PreferenceScreen>

@@ -1,0 +1,17 @@
+# Reference URL: http://neta-abc.blogspot.jp/2013/09/android-studiogitignore.html
+
+# Intellij project files
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Android Studio files
+*/build/
+gradle.properties
+
+# Open source library
+libs/ColorPickerPreference
+
+# Mac OS .DS_Store file
+.DS_Store

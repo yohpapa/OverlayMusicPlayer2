@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright 2014 Kensuke Nakai<kemumaki.kemuo@gmail.com>
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_panel"
+    android:background="@color/overlay_panel_background"
+    android:orientation="vertical"
+    android:layout_gravity="right|center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="right|center_vertical"
+        android:layout_width="@dimen/overlay_list_width"
+        android:layout_height="wrap_content">
+        
+	    <!-- Artwork image -->
+	    <ImageButton android:id="@+id/image_artwork"
+	        android:src="@drawable/ic_launcher"
+	        android:contentDescription="@string/desc_image_artwork"
+	        android:background="@android:color/transparent"
+	        android:scaleType="fitCenter"
+	        android:layout_gravity="center"
+	        android:layout_marginLeft="@dimen/overlay_layout_margin"
+	        android:layout_width="@dimen/overlay_artwork_size"
+	        android:layout_height="@dimen/overlay_artwork_size" />
+	
+	    <LinearLayout
+	        android:orientation="vertical"
+	        android:layout_gravity="center"
+	        android:layout_weight="1"
+	        android:layout_margin="@dimen/overlay_layout_margin"
+	        android:layout_width="0dp"
+	        android:layout_height="@dimen/overlay_panel_height">
+	        
+	        <LinearLayout
+	            android:orientation="horizontal"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content">
+	            
+		        <!-- Title -->
+		        <TextView android:id="@+id/text_title"
+		            android:textSize="@dimen/overlay_title_font_size"
+		            android:textColor="@color/overlay_title_dark"
+		            android:singleLine="true"
+		            android:ellipsize="end"
+		            android:layout_weight="1"
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content" />
+	            
+	            <!-- Hide button -->
+	            <Button android:id="@+id/button_hide"
+	                style="?android:attr/buttonBarButtonStyle"
+	                android:background="@android:drawable/ic_menu_delete"
+	                android:layout_marginLeft="@dimen/overlay_layout_margin"
+	                android:layout_width="@dimen/overlay_button_size"
+	                android:layout_height="@dimen/overlay_button_size" />
+		        
+	        </LinearLayout>
+	        
+	        <!-- Artist name -->
+	        <TextView android:id="@+id/text_artist"
+	            android:textSize="@dimen/overlay_artist_font_size"
+	            android:textColor="@color/overlay_artist_name"
+	            android:singleLine="true"
+		        android:ellipsize="end"
+	            android:layout_marginTop="@dimen/overlay_layout_margin"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" />
+	        
+	        <LinearLayout
+	            android:orientation="horizontal"
+	            android:layout_marginTop="@dimen/overlay_layout_margin"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content">
+	            
+	            <!-- Padding -->
+	            <TextView android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content" />
+	            
+	            <!-- Track down button -->
+	            <Button android:id="@+id/button_open_close_list"
+	                style="?android:attr/buttonBarButtonStyle"
+	                android:background="@android:drawable/ic_menu_agenda"
+	                android:layout_width="@dimen/overlay_button_size"
+	                android:layout_height="@dimen/overlay_button_size" />
+	            
+	            <!-- Padding -->
+	            <TextView android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content" />
+	            
+	            <!-- Track down button -->
+	            <Button android:id="@+id/button_track_down"
+	                style="?android:attr/buttonBarButtonStyle"
+	                android:background="@android:drawable/ic_media_previous"
+	                android:layout_width="@dimen/overlay_button_size"
+	                android:layout_height="@dimen/overlay_button_size" />
+	            
+	            <!-- Padding -->
+	            <TextView android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content" />
+	            
+	            <!-- Play or pause button -->
+	            <Button android:id="@+id/button_play_or_pause"
+	                style="?android:attr/buttonBarButtonStyle"
+	                android:background="@android:drawable/ic_media_play"
+	                android:layout_width="@dimen/overlay_button_size"
+	                android:layout_height="@dimen/overlay_button_size" />
+	            
+	            <!-- Padding -->
+	            <TextView android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content" />
+	            
+	            <!-- Track up button -->
+	            <Button android:id="@+id/button_track_up"
+	                style="?android:attr/buttonBarButtonStyle"
+	                android:background="@android:drawable/ic_media_next"
+	                android:layout_width="@dimen/overlay_button_size"
+	                android:layout_height="@dimen/overlay_button_size" />
+	
+	            <!-- Padding -->
+	            <TextView android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content" />
+	            
+	            <!-- Stop button -->
+	            <Button android:id="@+id/button_stop"
+	                style="?android:attr/buttonBarButtonStyle"
+	                android:background="@android:drawable/ic_menu_close_clear_cancel"
+	                android:layout_width="@dimen/overlay_button_size"
+	                android:layout_height="@dimen/overlay_button_size" />
+		        
+	            <!-- Padding -->
+	            <TextView android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content" />
+	            
+	        </LinearLayout>
+	    </LinearLayout>
+    
+	</LinearLayout>
+	
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginBottom="@dimen/overlay_layout_margin"
+        android:layout_width="@dimen/overlay_list_width"
+        android:layout_height="wrap_content">
+        
+        <!-- Position of the song currently playing -->
+        <TextView android:id="@+id/text_position"
+            android:textSize="@dimen/overlay_artist_font_size"
+            android:textColor="@color/overlay_title_dark"
+		    android:singleLine="true"
+	        android:ellipsize="end"
+	        android:gravity="center"
+	        android:layout_gravity="center_vertical"
+            android:layout_width="@dimen/overlay_time_width"
+            android:layout_height="wrap_content"/>
+        
+        <!-- Bar to change position to play -->
+        <SeekBar android:id="@+id/seekbar_position"
+            android:layout_marginLeft="@dimen/overlay_layout_margin"
+            android:layout_marginRight="@dimen/overlay_layout_margin"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        
+        <!-- Duration of the song currently playing -->
+        <TextView android:id="@+id/text_duration"
+            android:textSize="@dimen/overlay_artist_font_size"
+            android:textColor="@color/overlay_title_dark"
+		    android:singleLine="true"
+	        android:ellipsize="end"
+	        android:gravity="center"
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginRight="@dimen/overlay_layout_margin"
+            android:layout_width="@dimen/overlay_time_width"
+            android:layout_height="wrap_content"/>
+        
+    </LinearLayout>
+	
+    <!-- Current selected songs' list -->
+    <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+        android:id="@+id/list_current_songs"
+        android:visibility="gone"
+        android:layout_gravity="right|center_vertical"
+        android:layout_width="@dimen/overlay_list_width"
+        android:layout_height="@dimen/overlay_list_height" />
+        
+</LinearLayout>
